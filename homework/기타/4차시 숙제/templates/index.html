@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+    <title>ASUS RTX 2080TI</title>
+    <style>
+        .image {
+            width: 500px;
+            margin: 5px auto;
+            text-align: center;
+        }
+
+        .headline {
+            width: 350px;
+            margin: 10px auto;
+            background-color: black;
+            color: yellow;
+            padding: 10px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .Boxplot {
+            width: 100px;
+            height: 45px;
+            border-radius: 10px;
+            margin: 5px auto;
+        }
+
+        .input-box {
+            width: 10px;
+            height: 45px;
+            background-color: dimgray;
+            color: white;
+            padding: 3px;
+            margin: 5px auto;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+    </style>
+    <script>
+        $.ajax({
+            type: "GET", // GET 방식으로 요청한다.
+            url: "https://api.manana.kr/exchange/rate.json",
+            data: {}, // 요청하면서 함께 줄 데이터 (GET 요청시엔 비워두세요)
+            success: function (response) {
+                let doller = response[1][`rate`];
+                let html = "달러/원화 환율 : " + doller;
+                $(`#dollar`).append(html);
+            }
+        });
+
+
+        function order() {
+            let address = $("#O_address").val();
+            let phone = $("#O_phone").val();
+            let name = $("#O_name").val();
+            let count = $("#O_number").val();
+            if (address == "" || phone == "" || name == "" || count == "") {
+                alert('입력하지 않은 부분이 없는지 확인해 주세요! 정보가 부족합니다.');
+            } else {
+                $.ajax({
+                    type: "POST",
+                    url: "/order",
+                    data: {'name_give': name, 'count_give': count, 'address_give': address, 'phone_give': phone},
+                    success: function (response) {
+                        if (response.result != 'success') {
+                            alert(response["msg"]);
+                            window.location.reload();
+                        }
+                    }
+                })
+            }
+        }
+
+    </script>
+</head>
+<body>
+<h1 class="headline">ASUS RTX 2080TI</h1>
+<a href="https://www.asus.com/kr/Graphics-Cards/ROG-STRIX-RTX2080TI-O11G-GAMING/" target="blank" class="image"><p
+        class="ImageUrl"><img
+        src="https://www.asus.com/media/global/products/tT8CG8BsMigJQ3Lc/P_setting_fff_1_90_end_500.png"
+        alt="Asus RTX 2080TI 이미지 파일" width="500" height="450"/></p></a>
+<p>제조사 : Asus / 12nm / 1350MHz, 부스트 1665MHz / 4352개 / PCIe3.0×16/ GDDR6(DDR6) / 14000MHz / 11GB / 352-bit / HDMI / DP /
+    USB Type-C / 최대 모니터 4개 / 3개 팬 / 299.7mm / 백플레이트 / LED 라이트 / AURA SYNC</p>
+<button type="button"
+        onclick="location.href='http://prod.danawa.com/info/?pcode=6496050&keyword=rtx%202080%20ti&cate=112753' "
+        target="_blank" class="btn btn-primary">
+    최저가 검색(다나와)
+</button>
+<!--<button type="button" onclick="showExchangerate()" class="btn btn-primary">환율보기</button>-->
+<p id="dollar"></p>
+<div class="input-group mb-3">
+    <div class="input-group-prepend">
+        <label class="input-group-text Boxplot">주문자 성함</label>
+    </div>
+    <input type="text" class="form-control input-box" id="O_name" aria-label="Default"
+           aria-describedby="inputGroup-sizing-default">
+</div>
+
+<div class="input-group mb-3">
+    <div class="input-group-prepend">
+        <label class="input-group-text Boxplot">개수</label>
+    </div>
+    <select class="custom-select input-box" id="O_number">
+        <option selected>개수를 선택하세요</option>
+        <option value="1">1개</option>
+        <option value="2">2개</option>
+        <option value="3">3개</option>
+    </select>
+</div>
+<div class="input-group mb-3">
+    <div class="input-group-prepend">
+        <label class="input-group-text Boxplot">주소</label>
+    </div>
+    <input type="text" class="form-control input-box" id="O_address" aria-label="Default"
+           aria-describedby="inputGroup-sizing-default">
+</div>
+<div class="input-group mb-3">
+    <div class="input-group-prepend">
+        <label class="input-group-text Boxplot">전화번호</label>
+    </div>
+    <input type="text" class="form-control input-box" id="O_phone" aria-label="Default"
+           aria-describedby="inputGroup-sizing-default">
+</div>
+<div class="order">
+    <button onclick="order()" type="button" class="btn btn-primary">주문하기</button>
+</div>
+<div class="orders">
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="col">이름</th>
+            <th scope="col">수량</th>
+            <th scope="col">주소</th>
+            <th scope="col">전화번호</th>
+        </tr>
+        </thead>
+        <tbody id="orders-box">
+        <tr>
+            <td>박르탄</td>
+            <td>10000</td>
+            <td>르탄시 코딩구 열심동</td>
+            <td>010-1234-5678</td>
+        </tr>
+
+        </tbody>
+    </table>
+</div>
+
+
+</body>
+</html>
