@@ -431,7 +431,17 @@ if __name__ == "__main__":
 외판원 문제 (Traveling Salesperson Problem)를 통해 방문해야 하는 회사들의 목록과 그 위치가 주어졌을 때 외판원들은 경로 거리를 어떻게 계산해서 최단거리를 찾을 수 있을까?
 
 [routes.py](https://github.com/ProtossDragoon/greedy-tsp/blob/master/routes.py)는 저자님의 깃헙에서 다운로드
+스크립트는 시뮬레이션을 여러 번 반복해서 시뮬레이션 할 수 있도록 구성되어 있음
+시뮬레이션을 시작할 때마다 경로 탐색 시작점도 무작위로 선택됨
+시뮬레이션을 두번 이상 실행하는 경우 모든 반복에서 찾은 경로의 길이 중 가장 짧은 길이의 경로만 저장되고 나머지는 버려짐
+프로그램 사용자는 시간이 허락하는 만큼 시뮬레이션을 반복 실행하면 됨
 
 ```python
+import sys
+import random
+import numpy as np
+from routes import values
+
+dt = np.dtype([("corp_start", "S10"), ("corp_end", "S10", ("distance", int))])
 
 ```
