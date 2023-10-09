@@ -1,0 +1,197 @@
+{
+  "main": {
+    "id": "60b79dd2b828bef9",
+    "type": "split",
+    "children": [
+      {
+        "id": "8fa6be6cf1ea3adc",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "40cd44dbf6e5597a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "연구발전/AI/MLOps.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "42fe9cfb0b7ba94d",
+    "type": "split",
+    "children": [
+      {
+        "id": "e8f7f21d44fd9adc",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "eeb0bdee1abf8212",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "db1fb417dcebc33b",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "48e20a5d71c364f0",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "f9fd92a5966a8e08",
+    "type": "split",
+    "children": [
+      {
+        "id": "2b25dff449c36df0",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a0853f024fb5f047",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "연구발전/AI/MLOps.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "5a93fd936bcf7b29",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "연구발전/AI/MLOps.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "8bfe76b653b407e5",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "9a1be3eb56da3267",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "연구발전/AI/MLOps.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:퀵 스위처 열기": false,
+      "graph:그래프 뷰 열기": false,
+      "canvas:새 캔버스 만들기": false,
+      "daily-notes:오늘의 데일리 노트 열기": false,
+      "templates:템플릿 삽입": false,
+      "command-palette:명령어 팔레트 열기": false
+    }
+  },
+  "active": "40cd44dbf6e5597a",
+  "lastOpenFiles": [
+    "연구발전/github 관리/1. Main Stack.md",
+    "연구발전/AI/MLOps.md",
+    "연구발전/AI/결과 이미지 폴더/Pasted image 20231007120815.png",
+    "연구발전/AI/결과 이미지 폴더/Pasted image 20231007120510.png",
+    "api y.md",
+    "탐색적 자료 분석(EDA).md",
+    "R_DATA 종류.md",
+    "gpt4.md",
+    "탐색적 자료 분석.md",
+    "DATA 종류.md",
+    "연구발전/github 관리/6. KaggleStruggle.md",
+    "연구발전/github 관리/5. DataAnalysis().md",
+    "연구발전/github 관리/4. Static(Pin).md",
+    "연구발전/github 관리/2. Today Learn(Pin).md",
+    "연구발전/github 관리/3. MacOS(Pin).md",
+    "연구발전/github 관리",
+    "연구발전/AI/빅분기/빅데이터 분석기사 정리.md",
+    "연구발전/AI/빅분기/Pasted image 20230921015145.png",
+    "연구발전/AI/빅분기/Pasted image 20230921015027.png",
+    "연구발전/AI/빅분기/Pasted image 20230921014742.png",
+    "연구발전/AI/빅분기/Pasted image 20230921014516.png",
+    "연구발전/AI/빅분기/Pasted image 20230921014324.png",
+    "연구발전/AI/빅분기/Pasted image 20230921014202.png",
+    "연구발전/AI/빅분기/Pasted image 20230921013937.png",
+    "연구발전/AI/빅분기/Pasted image 20230921011710.png",
+    "연구발전/AI/쉘 스크립트.md",
+    "연구발전/AI/빅분기",
+    "연구발전/AI/결과 이미지 폴더",
+    "연구발전/AI/강연 내용 한글 정리.md",
+    "연구발전/AI/README.md",
+    "연구발전/AI/GPT 학습하기.md",
+    "연구발전/AI",
+    "연구발전/업무처리.md",
+    "연구발전/무지개 헥사코드.md",
+    "연구발전/경제/주식.md",
+    "연구발전/경제/비트코인.md",
+    "연구발전/경제",
+    "연구발전",
+    "경제/비트코인.md",
+    "경제/주식.md",
+    "경제",
+    "비트코인.md",
+    "AI/빅분기",
+    "AI/결과 이미지 폴더",
+    "AI"
+  ]
+}
