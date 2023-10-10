@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "연구발전/AI/MLOps_ch/Chaper 2. MLOps 기본 개념.md",
+                "file": "연구발전/AI/MLOps_ch/Chaper 3. 컨테이너와 엣지 디바이스를 위한 MLOps.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "연구발전/AI/MLOps_ch/Chaper 2. MLOps 기본 개념.md",
+                "file": "연구발전/AI/MLOps_ch/Chaper 3. 컨테이너와 엣지 디바이스를 위한 MLOps.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "연구발전/AI/MLOps_ch/Chaper 2. MLOps 기본 개념.md",
+                "file": "연구발전/AI/MLOps_ch/Chaper 3. 컨테이너와 엣지 디바이스를 위한 MLOps.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "연구발전/AI/MLOps_ch/Chaper 2. MLOps 기본 개념.md"
+                "file": "연구발전/AI/MLOps_ch/Chaper 3. 컨테이너와 엣지 디바이스를 위한 MLOps.md"
               }
             }
           }
@@ -148,10 +148,11 @@
   },
   "active": "eeb0bdee1abf8212",
   "lastOpenFiles": [
+    "연구발전/AI/MLOps.md",
+    "연구발전/AI/MLOps_ch/Chaper 3. 컨테이너와 엣지 디바이스를 위한 MLOps.md",
+    "연구발전/AI/MLOps_ch/Chaper 2. MLOps 기본 개념.md",
     "연구발전/AI/MLOps_ch/img",
     "연구발전/AI/MLOps_ch/img/IMG_0252.jpeg",
-    "연구발전/AI/MLOps.md",
-    "연구발전/AI/MLOps_ch/Chaper 2. MLOps 기본 개념.md",
     "연구발전/AI/MLOps_ch/Chaper 1 - MLOps 세상.md",
     "연구발전/AI/MLOps_ch",
     "연구발전/AI/README.md",
@@ -192,7 +193,6 @@
     "연구발전",
     "경제/비트코인.md",
     "경제",
-    "AI/빅분기",
-    "AI/결과 이미지 폴더"
+    "AI/빅분기"
   ]
 }
