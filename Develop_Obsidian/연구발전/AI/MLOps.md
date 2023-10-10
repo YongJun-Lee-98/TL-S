@@ -442,6 +442,132 @@ import random
 import numpy as np
 from routes import values
 
-dt = np.dtype([("corp_start", "S10"), ("corp_end", "S10", ("distance", int))])
+dt = np.dtype([("corp_start", "S10"), ("corp_end", "S10"), ("distance", int)])
+data_set = np.array(values, dtype=dt)
+
+def all_corps():
+	corps = {}
+	corp_set = set(data_set["corp_end"])
+	for corp in corp_set:
+		corps[corp] = ""
+	return corps
+
+def randomize_corp_start(corps):
+	return random.choice(corps)
+
+def get_shortest_route(routes):
+	route = sorted(routes, key=lambda dist: dist[2]).pop(0)
+	return route
+
+# verbose 0=출력하지 않음, 1=자세히, 2=함축적 정보
+def greedy_path(verbose=False):
+	start_corp = randomize_corp_start(list(all_corps().keys()))
+	print(f"시작회사: {start_corp}")
+	
+	itinerary = []
+	corps_visited = {}
+	count = 1
+	while True:
+		possible_routes = []
+		if verbose:
+			print('-----')
+			print(f"회사 {start_corp} 에서 갈 수 있는 회사들")
+		for path in data_set:
+			if start_corp in path["corp_start"]:
+				#한 번 방문했던 회사는 다시 방문이 불가능
+				if path["corp_end"] in corps_visited:
+					continue
+				else:
+					if verbose:
+						print(f"{path}, end=", "")
+					possible_routes.append(path)
+		if not possible_routes:
+			if verbose:
+				print('더 이상 갈 수 있는 회사가 없습니다. 여행을 종료합니다.')
+				print('-----')
+			break
+		# 다음으로 방문할 수 있는 회사들 중에서 가장 짧은 거리의 회사를 선택합니다.
+		route = get_shortest_route(possible_routes)
+		if verbose:
+			print(f"\n다음 여정: {route} ({count} 번째 동선 입니다.)")
+		count += 1
+		itinerary.append(route)
+		# 방문한 회사를 기록합니다.
+		corps_visited[route[0]] = count
+		
+		if verbose:
+			print(f"방문한 회사들: {corps_visited}")
+			print(f"현재까지의 여정: {itinerary}")
+		start_corp = route[1]
+	
+	return itinerary
+
+def get_total_distance(complete_itinerary):
+	distance = sum(z for x, y , z in complete_itinerary)
+	return distance
+
+def lowest_simulation(num):
+	routes = {}
+	for _ in range(num):
+		itinerary = greedy_path()
+		distance = get_total_distance(itinerary)
+		print(f"총 거리: {distance}")
+		routes[distance] = itinerary
+	shortest_distance = min(routes.keys())
+	route = routes[shortest_distance]
+	return shortest_distance, route
+
+def main():
+	if len(sys.argv) == 2:
+		iterations = int(sys.argv[1])
+		print(f"{iterations}회 시뮬레이션을 실행합니다.")
+		distance, route = lowest_simulation(iterations)
+		print(f"최단거리: {distance}")
+		print(f"최적경로: {route}")
+	else:
+		itinerary = greedy_path(verbose=True)
+		print(f"동선: {itinerary}")
+		print(f"총 거리: {get_total_distance(itinerary)}")
+if __name__ == "__main__":
+	main()
 
 ```
+
+탐욕 알고리즘을 통해 시뮬레이션을 반복하였을 때 반복 횟수가 적었을 수도 있다.
+
+탐욕 알고리즘 기반의 최적화를 포함하여 다양한 최적화 알고리즘은 수많은 지역 최소점에 빠질 수 있음
+아무리 많이 반복하더라도 세상에서 가장 좋은 경로를 발견하지 못할 수도 있다.
+즉, 이 말을 전역 최소점에 도달하지 못했을지도 모른다. 라고 할 수 있음
+
+머신러닝에서 자주 사용되는 경사 하강법도 최적화 알고리즘의 일종이다.
+머신러닝 모델들은 경사 하강 알고리즘을 이용해 손실을 최소화 하는 방향으로 학습됨
+
+> 딥러닝에서 얻으면 좋은 직관
+> 경사 하강 알고리즘의 시각적 이해를 돕는 도구로 텐서플로 플레이그라운드가 있음
+> 텐서플로 플레이그라운드에서는 학습률 변화에 따라 모델의 학습 결과가 어떻게 달라지는지를 시각화 해볼 수 있음
+> 학습률이 너무 높을 때 - 미세한 수렴이 일어나지 않아 손실이 더 이상 감소하지 않고 0.984에 머물러 있음
+> 학습률이 너무 낮을 때 - 수렴이 완료되기까지 오랜 시간이 걸리거나 지역 최소점으로 수렴할 수 있다는 사실을 알수 있음
+
+### 머신러닝의 핵심 개념
+머신러닝은 컴퓨터가 명시적인 소스 코드 없이도 데이터로부터 규칙을 학습하도록 만드는 것이라고 볼 수 있음
+
+머신러닝은 
+(지도학습(supervised training)), 
+(비지도 학습(unsupervised training)), 
+(강화 학습(reinforcement))로 나뉨
+
+지도학습은
+레이블(label)(혹은 '라벨'이라고도 불림)
+이 제공되는 경우 사용이 가능
+과거 데이터를 기반으로 학습
+
+모든 머신러닝 모델은 스케일링된 숫자 형식의 데이터로 학습한다는 사실을 유념함
+
+비지도 학습은 레이블을 '발견 discover'하는 데 사용되기도 한다.
+머신러닝 모델은 다양한 기준에 따라 여러 군집을 생성하고, 군집은 레이블이 없는 데이터의 분류 기준으로 삼을 수 있음
+적절히 군집화된 결과물을 '발견'이하고 분류 기준을 선택하는 것은 온전히 도메인 전무낙의 몫임
+
+이러한 알고리즘을 '군집화'라고 부르며 군집 중 하나를 '최고best'의 선수라는 레이블을 붙임
+
+
+
