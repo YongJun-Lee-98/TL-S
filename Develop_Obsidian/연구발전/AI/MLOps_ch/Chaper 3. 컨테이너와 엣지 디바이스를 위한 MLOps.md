@@ -252,3 +252,53 @@ grype python:3.8 | grep High
 ```bash
 grype --fail-on=high centos:8
 ```
+### HTTP로 모델 서빙하기
+플라스크ㅡ 웹 프레임워크 기반의 간단한 HTTP API를 통해 훈련된 모델을 서빙하는 컨테이너
+requirements.txt 파일이 작업 디렉토리에 있다고 가정하고 작성해보기
+```Dockerfile
+FROM python:3.8
+ARG VERSION
+LABEL org.label-schema.version=${VERSION}
+RUN python3 -m pip install --upgrade pip
+COPY ./requirements.txt /ws/requirements.txt
+WORKDIR /ws
+RUN pip install -r requirements.txt
+COPY ./webapp/ /ws
+ENTRYPOINT [ "python3" ]
+CMD [ "app.py" ]
+```
+#### ARG 명령어
+VERSION이라는 인수를 정의
+이 인수는 LABEL 명령어에서 변수로 쓰임
+LABEL 명령어를 이용하면 컨테이너에 레이블을 지정할 수 있음 
+이때 레이블 [스키마 컨벤션](https://oreil.ly/PtOSK)을 이용하면 레이블 형식을 정규화 할 수 있다.
+
+컨테이너 이미지에 포함된 날로부터 오랜 시가닝 지나서 컨테이너에서 실행되고 있는 모델을 교체하거나 재학습하는 상황
+도커 컨테이너에 직접 접속 - 모델 확인해보는 등의 복잡한 작업 없이도 빠르게 컨테이너에서 실행되고 있는 모델에 대한 정보를 담고 있는 레이블은 큰 도움이 될 수 있음
+
+- 저장되어있는 파일
+
+---
+.
+|- Dockerfile
+|- notebooks
+|- webapp
+|- predict.py
+|- requirements.txt
+
+컨테이너에 이미지 빌드하기
+```bash
+docker build . -t flask-docker:v1 --build-arg VERSION=AutoMPGDNNv1
+```
+빌드 확인하기
+```shell
+docker images flask-docker
+```
+-p 옵션을 이용해 컨테이너의 5000번 포트를 노출시키면서
+호스트 컴퓨터의 5001번 포트에 컨테이너를 5000번 포트를 매핑
+--name 옵션을 이용해 컨테이너 이름을 자동으로 생성하는 대신 flask-docer로 명시
+-d 플래그를 사용해 컨테이너가 백그라운드에서 실행되도록 하기
+```bash
+docker run --rm -p 5001:5000 -d --name flask-docker flask-docker:v1
+```
+
