@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "연구발전/AI/MLOps_ch/Chaper 3. 컨테이너와 엣지 디바이스를 위한 MLOps.md",
+                "file": "연구발전/AI/MLOps_ch/chapter 4. 머신러닝 애플리케이션에 지속적 배포를 적용시키기.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "연구발전/AI/MLOps_ch/Chaper 3. 컨테이너와 엣지 디바이스를 위한 MLOps.md",
+                "file": "연구발전/AI/MLOps_ch/chapter 4. 머신러닝 애플리케이션에 지속적 배포를 적용시키기.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "연구발전/AI/MLOps_ch/Chaper 3. 컨테이너와 엣지 디바이스를 위한 MLOps.md",
+                "file": "연구발전/AI/MLOps_ch/chapter 4. 머신러닝 애플리케이션에 지속적 배포를 적용시키기.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "연구발전/AI/MLOps_ch/Chaper 3. 컨테이너와 엣지 디바이스를 위한 MLOps.md"
+                "file": "연구발전/AI/MLOps_ch/chapter 4. 머신러닝 애플리케이션에 지속적 배포를 적용시키기.md"
               }
             }
           }
@@ -146,16 +146,19 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "40cd44dbf6e5597a",
+  "active": "eeb0bdee1abf8212",
   "lastOpenFiles": [
+    "연구발전/AI/MLOps.md",
+    "연구발전/AI/MLOps_ch/chapter 4. 머신러닝 애플리케이션에 지속적 배포를 적용시키기.md",
+    "연구발전/AI/GPT 학습하기.md",
+    "연구발전/AI/MLOps_ch/chapter 3. 컨테이너와 엣지 디바이스를 위한 MLOps.md",
+    "연구발전/AI/MLOps_ch/chapter 2. MLOps 기본 개념.md",
+    "연구발전/AI/MLOps_ch/chapter 1 - MLOps 세상.md",
+    "연구발전/AI/MLOps_ch/img/30C2B766-4B90-4ABE-85BD-CBFC5D799CDF_1_102_a.jpeg",
     "연구발전/AI/MLOps_ch/img/Pasted image 20231012155214.png",
     "연구발전/AI/MLOps_ch/img/Pasted image 20231012155057.png",
-    "연구발전/AI/MLOps.md",
-    "연구발전/AI/MLOps_ch/Chaper 3. 컨테이너와 엣지 디바이스를 위한 MLOps.md",
-    "연구발전/AI/MLOps_ch/Chaper 2. MLOps 기본 개념.md",
     "연구발전/AI/MLOps_ch/img",
     "연구발전/AI/MLOps_ch/img/IMG_0252.jpeg",
-    "연구발전/AI/MLOps_ch/Chaper 1 - MLOps 세상.md",
     "연구발전/AI/MLOps_ch",
     "연구발전/AI/README.md",
     "연구발전/github 관리/1. Main Stack.md",
@@ -178,13 +181,10 @@
     "연구발전/AI/빅분기/Pasted image 20230921015027.png",
     "연구발전/AI/빅분기/Pasted image 20230921014742.png",
     "연구발전/AI/빅분기/Pasted image 20230921014516.png",
-    "연구발전/AI/빅분기/Pasted image 20230921014324.png",
-    "연구발전/AI/빅분기/Pasted image 20230921014202.png",
     "연구발전/AI/쉘 스크립트.md",
     "연구발전/AI/빅분기",
     "연구발전/AI/결과 이미지 폴더",
     "연구발전/AI/강연 내용 한글 정리.md",
-    "연구발전/AI/GPT 학습하기.md",
     "연구발전/AI",
     "연구발전/업무처리.md",
     "연구발전/무지개 헥사코드.md",
