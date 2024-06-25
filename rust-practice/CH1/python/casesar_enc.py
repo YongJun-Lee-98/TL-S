@@ -8,11 +8,11 @@ def encrypt(text, shift):
         code = ord(ch)
         if code_a <= code <= code_z:
             code = (code - code_a + shift) % 26 + code_a
-            result += chr(code)
-        return result
+        result += chr(code)
+    return result
 
 # 함수 호출
 enc = encrypt("I LOVE RUST.", 3)
 dec = encrypt(enc, -3)
 
-print(enc, "=>", dec)
+print(f"{enc}=>{dec}")

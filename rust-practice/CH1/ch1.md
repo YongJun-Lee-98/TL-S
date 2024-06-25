@@ -224,3 +224,79 @@ let 변수명: 타입 = 값;
 시저 암호를 푸는 프로그램
 시저 암호는 암호학에서 다루는 간단한 방식의 암호  
 프로그램을 만들어보며 함수 정의 및 변수 타입에 대해 알아본다.  
+
+``` rust
+fn encrypt(text: &str, shift: i16) -> String {
+    let code_a = 'A' as i16;
+    let code_z = 'Z' as i16;
+    let mut result = String::new();
+    for ch in text.chars() {
+        // 문자 코드로 변환
+        let mut code = ch as i16;
+        // A와 Z 사이의 값인지
+        if code_a <= code && code <= code_z {
+            // shift만큼 뒤의 문자로 치환
+            code = (code - code_a + shift + 26) % 26 + code_a;
+        }
+
+        result.push((code as u8) as char);
+    }
+    return result;
+}
+
+fn main() {
+    let enc = encrypt("I LOVE RUST.", 3);
+    let dec = encrypt(&enc, -3);
+    println!("{} => {}", enc, dec);
+}
+```
+### 러스튼 '문자'와 '문자열'을 명확하게 구분하므로 주의  
+"abc" 문자열 리터럴은 상수이므로 변경이 불가능함  
+|표기|타입|의미|
+|-|--|---|
+|'A'|char|문자를 표시|
+|"A"|&str|문자열 리터럴|
+
+### 'as'는 강제적이 ㄴ타입 변환을 위해 이용하는 기능이다.  
+```rust
+let 변수명 = 변수 as 타입
+```
+여기서는 단순히 알파벳만을 표현할 수 있으면 되므로 i16을 사용했지만  
+알파벳 뿐 아니라 유니코드까지 지원해야한다면 u32를 지정해야한다.  
+C 언어에서 문자를 표현하기 위해 1바이트(8비트)를 이용하지만 러스트는 4바이트(32비트)를 이용하기 때문이다.  
+
+### text의 문자를 1개씩 반복해 문자열 치환을 한다.
+
+as를 이용해서 강제 형 변환을 해 문자코드를 문자로 변환한다.  
+i16에서 바로 char로 변환할 수 없으므로 u8로 변환한 뒤 다시 char로 변환한다.  
+
+``` rust
+fn 함수명 (인수 선언) -> 반환 값 타입 {
+    // 변수 선언 및 함수의 동작 정의
+}
+```
+
+함수에 값을 반환하는 return 구문이 없음.  
+러스트는 함수의 값을 반환할 때는 반환할 값 뒤에 세미콜론(;)을 붙이지 않거나 'return 반환환할 값';  
+사용한다.  
+return을 이용할 경우 '문장'이 되므로 ;을 붙여야한다.  
+```rust
+fn multiplication(a: i64, b: i64){
+    return a * b;
+}
+```
+
+### 러스트의 익명 함수 클로저
+```rust
+let 이름 = |이름| 정의;
+```
+
+예시  
+```rust
+fn main() {
+    let x2 = |n| n*2;
+    // x2 이용
+    println!("{}", x2(2));
+    println!("{}", x2(4));
+}
+```
