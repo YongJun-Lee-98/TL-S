@@ -30,4 +30,25 @@ main.rs에서는
 use num_bigint::BigInt;
 ```
 
-### 
+### 크레이트는 Cargo.toml에 추가해서 사용 가능
+num-bigint라는 크레이트를 이용하기 위해 Cargo.toml  
+'extern crate ***' 표기
+공개 러스트 소스 코드 중 extern crate 크레이트 명과 같이 선언하는 것을 볼 수 있다.  
+이 선언 방법은 프로젝트 안에서 이용하고 싶은 크레이트를 프로젝트에 링크한다는 것  
+러스트 2018부터는 사용하지 않는다.  
+Cargo.toml에 'edition="2021"'과 같이 설정돼 있다면  
+extern crate 선언을 하지 않아도 자동으로 크레이트를 링크해줌  
+
+use는 반드시 사용할 필요는 없다.  
+```rust
+fn main() {
+    let v = num_bigint::BigInt::from(1234);
+    println!("{}", v.pow(5678));
+}
+```
+
+### use 사용법
+use 크레이트명::모듈;
+use 크레이트명::모듈1::모듈1-1;
+use 크레이트명::{모듈A, 모듈B};
+
