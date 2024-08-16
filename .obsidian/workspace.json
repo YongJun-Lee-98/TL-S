@@ -1,0 +1,159 @@
+{
+  "main": {
+    "id": "7ed67e179912b247",
+    "type": "split",
+    "children": [
+      {
+        "id": "a1b0a634b356d6b6",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b454e87e80307aa5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "데이터베이스/실행 계획 수행.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "5606d9d9083496ca",
+    "type": "split",
+    "children": [
+      {
+        "id": "b25d7789bcb8a4fe",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ff8d4dd30f113f66",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "b6a25ba3cd688316",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "히스토",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "401004047d1eff22",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "8e5adda5313f804f",
+    "type": "split",
+    "children": [
+      {
+        "id": "479124b025ada2bd",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ae8032b3eed28a97",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "데이터베이스/실행 계획 수행.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "2800f5c87867e5f4",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "데이터베이스/실행 계획 수행.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "8eac67378ddd03d4",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "9a30bbfadd4ad30f",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "데이터베이스/실행 계획 수행.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:퀵 스위처 열기": false,
+      "graph:그래프 뷰 열기": false,
+      "canvas:새 캔버스 만들기": false,
+      "daily-notes:오늘의 데일리 노트 열기": false,
+      "templates:템플릿 삽입": false,
+      "command-palette:명령어 팔레트 열기": false
+    }
+  },
+  "active": "b454e87e80307aa5",
+  "lastOpenFiles": [
+    "데이터베이스/데이터베이스 확장.md",
+    "데이터베이스/실행 계획 수행.md",
+    "데이터베이스/개념적인 튜닝 용어.md",
+    "데이터베이스/주요 사용 쿼리들.md",
+    "데이터베이스/쿼리 오프로딩 master-slave.md",
+    "데이터베이스/튜닝용어 직관적 이해.md",
+    "README.md"
+  ]
+}
