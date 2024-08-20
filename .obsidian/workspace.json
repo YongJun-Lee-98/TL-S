@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "a1b0a634b356d6b6",
+        "id": "a3b2c1604f26d340",
         "type": "tabs",
         "children": [
           {
-            "id": "b454e87e80307aa5",
+            "id": "09367c552e998746",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "데이터베이스/실행 계획 수행.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "데이터베이스/실행 계획 수행.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "데이터베이스/실행 계획 수행.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "데이터베이스/실행 계획 수행.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -146,10 +138,10 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "b454e87e80307aa5",
+  "active": "09367c552e998746",
   "lastOpenFiles": [
-    "데이터베이스/데이터베이스 확장.md",
     "데이터베이스/실행 계획 수행.md",
+    "데이터베이스/데이터베이스 확장.md",
     "데이터베이스/개념적인 튜닝 용어.md",
     "데이터베이스/주요 사용 쿼리들.md",
     "데이터베이스/쿼리 오프로딩 master-slave.md",
