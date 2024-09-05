@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "a3b2c1604f26d340",
+        "id": "762623f56f8a6d5b",
         "type": "tabs",
         "children": [
           {
-            "id": "09367c552e998746",
+            "id": "93948da2faa78738",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "코딩테스트/그리디.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -65,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "8e5adda5313f804f",
@@ -81,6 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "코딩테스트/그리디.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "코딩테스트/그리디.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,14 +125,29 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "코딩테스트/그리디.md"
+              }
+            }
+          },
+          {
+            "id": "1d9e8666122b7cd9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "코딩테스트/주요 목차.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 300,
+    "width": 258.5,
     "collapsed": true
   },
   "left-ribbon": {
@@ -138,14 +160,30 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "09367c552e998746",
+  "active": "93948da2faa78738",
   "lastOpenFiles": [
-    "데이터베이스/실행 계획 수행.md",
+    "코딩테스트/Python/bigger_f.py",
+    "코딩테스트/Python/bigger.py",
+    "코딩테스트/Python/change_money.py",
+    "코딩테스트/복잡도 설명과 코딩 테스트.md",
+    "코딩테스트/그리디.md",
+    "코딩테스트/주요 목차.md",
+    "코딩테스트/Python/실습 환경 구축하기.md",
+    "코딩테스트/Python/next().md",
+    "데이터베이스/업무에 바로 사용하는 SQL 튜닝/실행 계획 수행.md",
+    "데이터베이스/업무에 바로 사용하는 SQL 튜닝/주요 사용 쿼리들.md",
+    "데이터베이스/업무에 바로 사용하는 SQL 튜닝/튜닝용어 직관적 이해.md",
     "데이터베이스/데이터베이스 확장.md",
-    "데이터베이스/개념적인 튜닝 용어.md",
-    "데이터베이스/주요 사용 쿼리들.md",
+    "데이터베이스/업무에 바로 사용하는 SQL 튜닝/개념적인 튜닝 용어.md",
     "데이터베이스/쿼리 오프로딩 master-slave.md",
-    "데이터베이스/튜닝용어 직관적 이해.md",
+    "데이터베이스/안전모드로 권한 넣는방법.md",
+    "데이터베이스/업무에 바로 사용하는 SQL 튜닝",
+    "데이터베이스/Pasted image 20240830155548.png",
+    "test/cannon_test/cannon.js",
+    "test/cannon_test",
+    "test/cannon test/cannon.js",
+    "test/cannon test",
+    "test/cannon.js",
     "README.md"
   ]
 }

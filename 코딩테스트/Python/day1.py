@@ -1,1 +1,2 @@
-print("Hello World!")
+array = []
+array.sort()
