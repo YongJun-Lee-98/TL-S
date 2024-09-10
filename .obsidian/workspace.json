@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "762623f56f8a6d5b",
+        "id": "d82f7180749d8f56",
         "type": "tabs",
         "children": [
           {
-            "id": "93948da2faa78738",
+            "id": "d90954a8f74be4a7",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -160,13 +160,21 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "93948da2faa78738",
+  "active": "d90954a8f74be4a7",
   "lastOpenFiles": [
+    "코딩테스트/Python/greedy_make_one_1.py",
+    "코딩테스트/Python/greedy_make_one_2.py",
+    "코딩테스트/Python/greedy_make_one.py",
+    "코딩테스트/Python/greedy_number_card_2.py",
+    "코딩테스트/Python/greedy_number_card_1.py",
+    "코딩테스트/Python/greedy_number_card.py",
+    "코딩테스트/Python/greedy_bigger_f.py",
+    "코딩테스트/Python/greedy_bigger.py",
+    "코딩테스트/그리디.md",
     "코딩테스트/Python/bigger_f.py",
     "코딩테스트/Python/bigger.py",
     "코딩테스트/Python/change_money.py",
     "코딩테스트/복잡도 설명과 코딩 테스트.md",
-    "코딩테스트/그리디.md",
     "코딩테스트/주요 목차.md",
     "코딩테스트/Python/실습 환경 구축하기.md",
     "코딩테스트/Python/next().md",
@@ -177,13 +185,7 @@
     "데이터베이스/업무에 바로 사용하는 SQL 튜닝/개념적인 튜닝 용어.md",
     "데이터베이스/쿼리 오프로딩 master-slave.md",
     "데이터베이스/안전모드로 권한 넣는방법.md",
-    "데이터베이스/업무에 바로 사용하는 SQL 튜닝",
     "데이터베이스/Pasted image 20240830155548.png",
-    "test/cannon_test/cannon.js",
-    "test/cannon_test",
-    "test/cannon test/cannon.js",
-    "test/cannon test",
-    "test/cannon.js",
     "README.md"
   ]
 }
