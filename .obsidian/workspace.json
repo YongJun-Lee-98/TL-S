@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "d82f7180749d8f56",
+        "id": "a20cc7ebb3af5c91",
         "type": "tabs",
         "children": [
           {
-            "id": "d90954a8f74be4a7",
+            "id": "d5184e676126d383",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "DL-learn/프로그래밍 예제.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "DL-learn/프로그래밍 예제.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "DL-learn/프로그래밍 예제.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "DL-learn/프로그래밍 예제.md"
+              }
             }
           },
           {
@@ -151,12 +159,16 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "d90954a8f74be4a7",
+  "active": "d5184e676126d383",
   "lastOpenFiles": [
+    "코딩테스트/Python/king_knight.py",
+    "코딩테스트/Python/count3_time.py",
+    "코딩테스트/Python/move_map_1.py",
+    "코딩테스트/Python/move_map.py",
     "DL-learn/학습 순서.md",
     "DL-learn/프로그래밍 예제.md",
-    "DL-learn/옮긴이의 말.md",
     "DL-learn/딥러닝이란 무엇인가.md",
+    "DL-learn/옮긴이의 말.md",
     "DL-learn/1. book_name.md",
     "DL-learn/01. 로젠블랫 퍼셉트론.md",
     "DL-learn",
@@ -167,13 +179,10 @@
     "DL-learn/book/inner_file/LDL-main/data/fra.txt",
     "DL-learn/book/inner_file/LDL-main/data/frankenstein.txt",
     "DL-learn/book/inner_file/LDL-main/data/FoodServices.csv",
-    "DL-learn/book/inner_file/LDL-main/data/FoodServices.csv.numbers",
     "DL-learn/book/딥러닝이란 무엇인가.md",
     "DL-learn/book/옮긴이의 말.md",
     "DL-learn/book/inner_file/LDL-main/README.md",
     "코딩테스트/그리디.md",
-    "코딩테스트/Python/greedy_make_one_1.py",
-    "코딩테스트/Python/greedy_make_one_2.py",
     "코딩테스트/복잡도 설명과 코딩 테스트.md",
     "코딩테스트/주요 목차.md",
     "코딩테스트/Python/실습 환경 구축하기.md",
