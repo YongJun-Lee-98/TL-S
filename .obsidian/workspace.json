@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "a20cc7ebb3af5c91",
+        "id": "29816b8bb94b5923",
         "type": "tabs",
         "children": [
           {
-            "id": "d5184e676126d383",
+            "id": "b81b17946e55638e",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "DL-learn/프로그래밍 예제.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DL-learn/프로그래밍 예제.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DL-learn/프로그래밍 예제.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "DL-learn/프로그래밍 예제.md"
-              }
+              "state": {}
             }
           },
           {
@@ -159,14 +151,26 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "d5184e676126d383",
+  "active": "b81b17946e55638e",
   "lastOpenFiles": [
+    "DL-learn/05. DL 프레임 워크 및 네트워크 미조정.md",
+    "코딩테스트/정렬.md",
+    "코딩테스트/3. DFS_BFS.md",
+    "코딩테스트/Python/DFS.py",
+    "자소서 분석/무제 파일.md",
+    "자소서 분석/박ㅇㅇ 분석.md",
+    "README.md",
+    "자소서 분석",
+    "코딩테스트/Python/queue.py",
+    "코딩테스트/Python/stack_python.py",
+    "코딩테스트/복잡도 설명과 코딩 테스트.md",
+    "코딩테스트/1. 그리디.md",
+    "DL-learn/프로그래밍 예제.md",
     "코딩테스트/Python/king_knight.py",
     "코딩테스트/Python/count3_time.py",
     "코딩테스트/Python/move_map_1.py",
     "코딩테스트/Python/move_map.py",
     "DL-learn/학습 순서.md",
-    "DL-learn/프로그래밍 예제.md",
     "DL-learn/딥러닝이란 무엇인가.md",
     "DL-learn/옮긴이의 말.md",
     "DL-learn/1. book_name.md",
@@ -174,16 +178,9 @@
     "DL-learn",
     "DL-learn/book/프로그래밍 예제.md",
     "DL-learn/book/inner_file/LDL-main/data/coco/captions_train2014.json",
-    "DL-learn/book/inner_file/LDL-main/data/coco",
-    "DL-learn/book/inner_file/LDL-main/data/무제 폴더",
-    "DL-learn/book/inner_file/LDL-main/data/fra.txt",
-    "DL-learn/book/inner_file/LDL-main/data/frankenstein.txt",
-    "DL-learn/book/inner_file/LDL-main/data/FoodServices.csv",
     "DL-learn/book/딥러닝이란 무엇인가.md",
     "DL-learn/book/옮긴이의 말.md",
     "DL-learn/book/inner_file/LDL-main/README.md",
-    "코딩테스트/그리디.md",
-    "코딩테스트/복잡도 설명과 코딩 테스트.md",
     "코딩테스트/주요 목차.md",
     "코딩테스트/Python/실습 환경 구축하기.md",
     "코딩테스트/Python/next().md",
@@ -192,9 +189,6 @@
     "데이터베이스/업무에 바로 사용하는 SQL 튜닝/튜닝용어 직관적 이해.md",
     "데이터베이스/데이터베이스 확장.md",
     "데이터베이스/업무에 바로 사용하는 SQL 튜닝/개념적인 튜닝 용어.md",
-    "데이터베이스/쿼리 오프로딩 master-slave.md",
-    "데이터베이스/안전모드로 권한 넣는방법.md",
-    "데이터베이스/Pasted image 20240830155548.png",
-    "README.md"
+    "데이터베이스/Pasted image 20240830155548.png"
   ]
 }
