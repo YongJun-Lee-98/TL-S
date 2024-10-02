@@ -11,8 +11,12 @@
             "id": "b81b17946e55638e",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Rust/문자열 정리.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -44,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "히스토",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Rust/문자열 정리.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Rust/문자열 정리.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Rust/문자열 정리.md"
+              }
             }
           },
           {
@@ -153,42 +161,42 @@
   },
   "active": "b81b17946e55638e",
   "lastOpenFiles": [
-    "DL-learn/05. DL 프레임 워크 및 네트워크 미조정.md",
-    "코딩테스트/정렬.md",
-    "코딩테스트/3. DFS_BFS.md",
-    "코딩테스트/Python/DFS.py",
-    "자소서 분석/무제 파일.md",
+    "rust-in/str_split",
+    "rust-in/str_split.str_split.cb0e36791cd7da06-cgu.0.rcgu.o",
+    "rust-in/str_split.9tac85arnno3d9mezpkbpxu87.rcgu.o",
+    "rust-in/str_split.rs",
+    "상황정리/해야하는 것.md",
+    "rust-in/enc_save_load/target/debug/incremental/enc_save_load-10vr1gyvz0u4u/s-h0h1sn59iz-0m5k32h-cpbq9j596fv9wuqwvrnmrv8f9/work-products.bin",
+    "rust-in/enc_save_load/target/debug/incremental/enc_save_load-10vr1gyvz0u4u/s-h0h1sn59iz-0m5k32h-cpbq9j596fv9wuqwvrnmrv8f9/query-cache.bin",
+    "rust-in/enc_save_load/target/debug/incremental/enc_save_load-10vr1gyvz0u4u/s-h0h1sn59iz-0m5k32h-cpbq9j596fv9wuqwvrnmrv8f9/dep-graph.bin",
+    "rust-in/enc_save_load/target/debug/incremental/enc_save_load-10vr1gyvz0u4u/s-h0h1sn59iz-0m5k32h-cpbq9j596fv9wuqwvrnmrv8f9",
+    "rust-in/enc_save_load/target/debug/incremental/enc_save_load-3r0yhmhev15cq/s-h0h1sn59io-0lg72g5-c9f41q1vl9fr9u1fdok943142/work-products.bin",
+    "rust-in/enc_save_load/target/debug/incremental/enc_save_load-3r0yhmhev15cq/s-h0h1sn59io-0lg72g5-c9f41q1vl9fr9u1fdok943142/query-cache.bin",
+    "rust-in/enc_save_load/target/debug/incremental/enc_save_load-3r0yhmhev15cq/s-h0h1sn59io-0lg72g5-c9f41q1vl9fr9u1fdok943142/dep-graph.bin",
+    "Rust/러스트 라이프타임.md",
+    "데이터베이스/안전모드로 권한 넣는방법.md",
+    "rust-in/ch3/string.md",
+    "rust-in/파이썬과의 비교.md",
+    "rust-in/readme.md",
+    "rust 기본/ch3/string.md",
+    "Rust/문자열 정리.md",
+    "Rust/러스트 특징.md",
+    "데이터베이스/데이터베이스 확장.md",
+    "자소서 분석/면접 Q&A시에 할 질문.md",
     "자소서 분석/박ㅇㅇ 분석.md",
+    "코딩테스트/정렬.md",
+    "DL-learn/05. DL 프레임 워크 및 네트워크 미조정.md",
+    "코딩테스트/3. DFS_BFS.md",
     "README.md",
-    "자소서 분석",
-    "코딩테스트/Python/queue.py",
-    "코딩테스트/Python/stack_python.py",
     "코딩테스트/복잡도 설명과 코딩 테스트.md",
     "코딩테스트/1. 그리디.md",
     "DL-learn/프로그래밍 예제.md",
-    "코딩테스트/Python/king_knight.py",
-    "코딩테스트/Python/count3_time.py",
-    "코딩테스트/Python/move_map_1.py",
-    "코딩테스트/Python/move_map.py",
     "DL-learn/학습 순서.md",
     "DL-learn/딥러닝이란 무엇인가.md",
     "DL-learn/옮긴이의 말.md",
     "DL-learn/1. book_name.md",
     "DL-learn/01. 로젠블랫 퍼셉트론.md",
-    "DL-learn",
     "DL-learn/book/프로그래밍 예제.md",
-    "DL-learn/book/inner_file/LDL-main/data/coco/captions_train2014.json",
-    "DL-learn/book/딥러닝이란 무엇인가.md",
-    "DL-learn/book/옮긴이의 말.md",
-    "DL-learn/book/inner_file/LDL-main/README.md",
-    "코딩테스트/주요 목차.md",
-    "코딩테스트/Python/실습 환경 구축하기.md",
-    "코딩테스트/Python/next().md",
-    "데이터베이스/업무에 바로 사용하는 SQL 튜닝/실행 계획 수행.md",
-    "데이터베이스/업무에 바로 사용하는 SQL 튜닝/주요 사용 쿼리들.md",
-    "데이터베이스/업무에 바로 사용하는 SQL 튜닝/튜닝용어 직관적 이해.md",
-    "데이터베이스/데이터베이스 확장.md",
-    "데이터베이스/업무에 바로 사용하는 SQL 튜닝/개념적인 튜닝 용어.md",
     "데이터베이스/Pasted image 20240830155548.png"
   ]
 }
