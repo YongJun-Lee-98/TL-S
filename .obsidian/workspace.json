@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "29816b8bb94b5923",
+        "id": "41fb95ee05c12004",
         "type": "tabs",
         "children": [
           {
-            "id": "b81b17946e55638e",
+            "id": "9d3a8f34469cf17d",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Rust/문자열 정리.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Rust/문자열 정리.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Rust/문자열 정리.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Rust/문자열 정리.md"
-              }
+              "state": {}
             }
           },
           {
@@ -159,28 +151,30 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "ff8d4dd30f113f66",
+  "active": "9d3a8f34469cf17d",
   "lastOpenFiles": [
-    "Rust/rust-in/str_split",
-    "rust-in/str_split.str_split.cb0e36791cd7da06-cgu.0.rcgu.o",
-    "rust-in/str_split.9tac85arnno3d9mezpkbpxu87.rcgu.o",
-    "Rust/rust-in/str_split.rs",
+    "Rust/md 정리/러스트 라이프타임.md",
+    "Rust/md 정리/테스트 프레임워크.md",
+    "Rust/mytest_struct/target/debug/incremental/mytest_struct-35sv7mnjnlku6/s-h0ifz6jni2-1xbawm2-bjz6b967vj3mjemix30ja9apv/work-products.bin",
+    "Rust/mytest_struct/target/debug/incremental/mytest_struct-35sv7mnjnlku6/s-h0ifz6jni2-1xbawm2-bjz6b967vj3mjemix30ja9apv/query-cache.bin",
+    "Rust/mytest_struct/target/debug/incremental/mytest_struct-35sv7mnjnlku6/s-h0ifz6jni2-1xbawm2-bjz6b967vj3mjemix30ja9apv/eo2aoyod41gtm87t5i5xm170q.o",
+    "Rust/mytest_struct/target/debug/incremental/mytest_struct-35sv7mnjnlku6/s-h0ifz6jni2-1xbawm2-bjz6b967vj3mjemix30ja9apv/diyfi189dsrxlbjjj022n6xkx.o",
+    "Rust/mytest_struct/target/debug/incremental/mytest_struct-35sv7mnjnlku6/s-h0ifz6jni2-1xbawm2-bjz6b967vj3mjemix30ja9apv/dep-graph.bin",
+    "Rust/mytest_struct/target/debug/incremental/mytest_struct-35sv7mnjnlku6/s-h0ifz6jni2-1xbawm2-bjz6b967vj3mjemix30ja9apv/dali4rqksjjdit2ryqessr5d0.o",
+    "Rust/mytest_struct/target/debug/incremental/mytest_struct-35sv7mnjnlku6/s-h0ifz6jni2-1xbawm2-bjz6b967vj3mjemix30ja9apv/cqqjmvq3gikkck7xrs4l18u74.o",
+    "Rust/mytest_struct/target/debug/incremental/mytest_struct-35sv7mnjnlku6/s-h0ifz6jni2-1xbawm2-bjz6b967vj3mjemix30ja9apv/cd3320k4l9olg5169yic5vrwv.o",
+    "Rust/mytest_struct/target/debug/incremental/mytest_struct-35sv7mnjnlku6/s-h0ifz6jni2-1xbawm2-bjz6b967vj3mjemix30ja9apv/bvar7as0xc87uq3wzbcqgakk7.o",
+    "Rust/mytest_struct/target/debug/incremental/mytest_struct-35sv7mnjnlku6/s-h0ifz6jni2-1xbawm2-bjz6b967vj3mjemix30ja9apv/b9qfcahdt0goi7js3xv59601a.o",
+    "Rust/md 정리/전역 변수와 unsafe.md",
+    "Rust/md 정리/기본 실행.md",
+    "Rust/md 정리/러스트 특징.md",
+    "Rust/md 정리/문자열 정리.md",
     "상황정리/해야하는 것.md",
-    "Rust/rust-in/enc_save_load/target/debug/incremental/enc_save_load-10vr1gyvz0u4u/s-h0h1sn59iz-0m5k32h-cpbq9j596fv9wuqwvrnmrv8f9/work-products.bin",
-    "Rust/rust-in/enc_save_load/target/debug/incremental/enc_save_load-10vr1gyvz0u4u/s-h0h1sn59iz-0m5k32h-cpbq9j596fv9wuqwvrnmrv8f9/query-cache.bin",
-    "Rust/rust-in/enc_save_load/target/debug/incremental/enc_save_load-10vr1gyvz0u4u/s-h0h1sn59iz-0m5k32h-cpbq9j596fv9wuqwvrnmrv8f9/dep-graph.bin",
-    "Rust/rust-in/enc_save_load/target/debug/incremental/enc_save_load-10vr1gyvz0u4u/s-h0h1sn59iz-0m5k32h-cpbq9j596fv9wuqwvrnmrv8f9",
-    "Rust/rust-in/enc_save_load/target/debug/incremental/enc_save_load-3r0yhmhev15cq/s-h0h1sn59io-0lg72g5-c9f41q1vl9fr9u1fdok943142/work-products.bin",
-    "Rust/rust-in/enc_save_load/target/debug/incremental/enc_save_load-3r0yhmhev15cq/s-h0h1sn59io-0lg72g5-c9f41q1vl9fr9u1fdok943142/query-cache.bin",
-    "Rust/rust-in/enc_save_load/target/debug/incremental/enc_save_load-3r0yhmhev15cq/s-h0h1sn59io-0lg72g5-c9f41q1vl9fr9u1fdok943142/dep-graph.bin",
-    "Rust/러스트 라이프타임.md",
     "데이터베이스/안전모드로 권한 넣는방법.md",
     "Rust/rust-in/ch3/string.md",
     "Rust/rust-in/파이썬과의 비교.md",
     "Rust/rust-in/readme.md",
     "rust 기본/ch3/string.md",
-    "Rust/문자열 정리.md",
-    "Rust/러스트 특징.md",
     "데이터베이스/데이터베이스 확장.md",
     "자소서 분석/면접 Q&A시에 할 질문.md",
     "자소서 분석/박ㅇㅇ 분석.md",
@@ -194,9 +188,6 @@
     "DL-learn/학습 순서.md",
     "DL-learn/딥러닝이란 무엇인가.md",
     "DL-learn/옮긴이의 말.md",
-    "DL-learn/1. book_name.md",
-    "DL-learn/01. 로젠블랫 퍼셉트론.md",
-    "DL-learn/book/프로그래밍 예제.md",
     "데이터베이스/Pasted image 20240830155548.png"
   ]
 }
