@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Rust/md 정리/제네릭.md",
+                "file": "Rust/md 정리/반복자.md",
                 "mode": "preview",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Rust/md 정리/제네릭.md",
+                "file": "Rust/md 정리/반복자.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Rust/md 정리/제네릭.md",
+                "file": "Rust/md 정리/반복자.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Rust/md 정리/제네릭.md"
+                "file": "Rust/md 정리/반복자.md"
               }
             }
           },
@@ -161,6 +161,12 @@
   },
   "active": "9d3a8f34469cf17d",
   "lastOpenFiles": [
+    "Rust/rust-in/ch4/iter_prime",
+    "Rust/rust-in/ch4/iter_prime.iter_prime.24003b3ab92bb925-cgu.0.rcgu.o",
+    "Rust/rust-in/ch4/iter_prime.c65gjofsfqrnkf0kyje8c2cpf.rcgu.o",
+    "Rust/rust-in/ch4/iter_prime.rs",
+    "Rust/md 정리/제네릭.md",
+    "Rust/md 정리/반복자.md",
     "Rust/rust-in/ch4/x2_generics",
     "Rust/rust-in/ch4/x2_generics.x2_generics.a4aa84f0782fe359-cgu.0.rcgu.o",
     "Rust/rust-in/ch4/x2_generics.3ueed1l5aehezmq20xgkzpz3b.rcgu.o",
@@ -168,12 +174,7 @@
     "Rust/rust-in/ch4/add_generics",
     "Rust/rust-in/ch4/add_generics.add_generics.17ca12e8dec39a36-cgu.0.rcgu.o",
     "Rust/rust-in/ch4/add_generics.adbx3t1h2ezrsjudb0gz48qya.rcgu.o",
-    "Rust/rust-in/ch4/add_generics.rs",
-    "Rust/rust-in/ch4/vec_i32",
-    "Rust/rust-in/ch4/vec_i32.vec_i32.9832c148b99383bb-cgu.0.rcgu.o",
-    "Rust/rust-in/ch4/vec_i32.c0idfx07hxhxbg09duzrgv9ip.rcgu.o",
     "Rust/md 정리/공통 동작을 정의하는 트레잇.md",
-    "Rust/md 정리/제네릭.md",
     "Rust/md 정리/구조체와 메서드.md",
     "Rust/md 정리/기본 실행.md",
     "README.md",
@@ -196,7 +197,6 @@
     "코딩테스트/3. DFS_BFS.md",
     "코딩테스트/복잡도 설명과 코딩 테스트.md",
     "코딩테스트/1. 그리디.md",
-    "DL-learn/프로그래밍 예제.md",
     "데이터베이스/Pasted image 20240830155548.png"
   ]
 }
