@@ -18,15 +18,14 @@ impl Iterator for PrimeIterator {
 	type Item = u8; 
 	fn next(&mut self) -> Option<Self::Item> {
 		// 소수를 찾아 반환
-		self.n += 1;
-		// 8비트를 넘는 소수는 찾지 않음
-		if std::u8::MAX == self.n {
-			return None
-		}
-		// self.n이 소수인지 확인
-		if self.is_prime() { return Some(self.n); } 
-        else {
-			return self.next();
+		loop {
+			self.n += 1;
+			// 8비트를 넘는 소수는 찾지 않음
+			if std::u8::MAX == self.n {
+				return None
+			}
+			// self.n이 소수인지 확인
+			if self.is_prime() { return Some(self.n); } 
 		}
 	}
 }
