@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Rust/md 정리/네트워크와 병렬 처리.md",
+                "file": "Rust/md 정리/간이 채팅 프로그램.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Rust/md 정리/네트워크와 병렬 처리.md",
+                "file": "Rust/md 정리/간이 채팅 프로그램.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Rust/md 정리/네트워크와 병렬 처리.md",
+                "file": "Rust/md 정리/간이 채팅 프로그램.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Rust/md 정리/네트워크와 병렬 처리.md"
+                "file": "Rust/md 정리/간이 채팅 프로그램.md"
               }
             }
           },
@@ -162,24 +162,24 @@
   },
   "active": "23aebff963348bd0",
   "lastOpenFiles": [
-    "Rust/rust-in/ch5/threadtest",
-    "Rust/rust-in/ch5/threadtest.threadtest.7723617e3bc946da-cgu.1.rcgu.o",
-    "Rust/rust-in/ch5/threadtest.threadtest.7723617e3bc946da-cgu.0.rcgu.o",
-    "Rust/rust-in/ch5/threadtest.1s04wireoi2plc226d00p8vyc.rcgu.o",
-    "Rust/rust-in/ch5/threadtest.rs",
-    "Rust/rust-in/ch5",
+    "Rust/md 정리/네트워크와 병렬 처리.md",
+    "Rust/md 정리/간이 채팅 프로그램.md",
+    "Rust/rust-in/ch5/calc_multi",
+    "Rust/rust-in/ch5/calc_multi.calc_multi.a2618515f4fbce2b-cgu.1.rcgu.o",
+    "Rust/rust-in/ch5/calc_multi.calc_multi.a2618515f4fbce2b-cgu.2.rcgu.o",
+    "Rust/rust-in/ch5/calc_multi.calc_multi.a2618515f4fbce2b-cgu.3.rcgu.o",
+    "Rust/rust-in/ch5/calc_multi.calc_multi.a2618515f4fbce2b-cgu.0.rcgu.o",
+    "Rust/rust-in/ch5/calc_multi.calc_multi.a2618515f4fbce2b-cgu.5.rcgu.o",
+    "Rust/rust-in/ch5/calc_multi.calc_multi.a2618515f4fbce2b-cgu.4.rcgu.o",
+    "Rust/rust-in/ch5/calc_multi.0d6dxuc0bcue87cs1z7ssab09.rcgu.o",
+    "Rust/rust-in/ch5/calc_multi.rs",
+    "Rust/rust-in/ch5/calc_single",
     "상황정리/해야하는 것.md",
-    "무제 폴더",
     "코딩테스트/정렬.md",
     "코딩테스트/3. DFS_BFS.md",
     "코딩테스트/1. 그리디.md",
-    "Rust/md 정리/네트워크와 병렬 처리.md",
     "Rust/md 정리/이미지 처리 도구 만들기.md",
     "Rust/rust-in/ch4/image_checkerboard/checkerboard.png",
-    "Rust/rust-in/ch4/image_checkerboard/target/debug/image_checkerboard.d",
-    "Rust/rust-in/ch4/image_checkerboard/target/debug/image_checkerboard",
-    "Rust/rust-in/ch4/image_checkerboard/target/debug/deps/image_checkerboard-9ce3bd68d38384d8",
-    "Rust/rust-in/ch4/image_checkerboard/target/debug/incremental/image_checkerboard-0agnalruehm82/s-h0qo3xsvrc-1ype52o-cifaskr4849bbon80p0m1z56t/8gc8xwittiu9p5mcd4dlml0ew.o",
     "Rust/md 정리/무제 파일 1.md",
     "Rust/md 정리/직접 만든 크레이트 공개하기.md",
     "Rust/md 정리/러스트의 모듈, 크레이트 패키지.md",
