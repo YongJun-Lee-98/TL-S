@@ -13,10 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Rust/md 정리/간이 채팅 프로그램.md",
+                "file": "Rust/md 정리/매크로 만들기.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "매크로 만들기"
             }
           }
         ]
@@ -39,7 +41,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-folder-closed",
+              "title": "파일 탐색기"
             }
           },
           {
@@ -54,7 +58,9 @@
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "검색"
             }
           },
           {
@@ -62,7 +68,9 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
             }
           }
         ]
@@ -85,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Rust/md 정리/간이 채팅 프로그램.md",
+                "file": "Rust/md 정리/매크로 만들기.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -93,7 +101,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "매크로 만들기의 백링크"
             }
           },
           {
@@ -102,10 +112,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Rust/md 정리/간이 채팅 프로그램.md",
+                "file": "Rust/md 정리/매크로 만들기.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "매크로 만들기의 나가는 링크"
             }
           },
           {
@@ -116,7 +128,9 @@
               "state": {
                 "sortOrder": "frequency",
                 "useHierarchy": true
-              }
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
             }
           },
           {
@@ -125,8 +139,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Rust/md 정리/간이 채팅 프로그램.md"
-              }
+                "file": "Rust/md 정리/매크로 만들기.md"
+              },
+              "icon": "lucide-list",
+              "title": "매크로 만들기 개요"
             }
           },
           {
@@ -138,7 +154,9 @@
                 "file": "코딩테스트/주요 목차.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "주요 목차"
             }
           }
         ],
@@ -162,20 +180,21 @@
   },
   "active": "82aa054e04ed863c",
   "lastOpenFiles": [
+    "Rust/rust-in/ch5/macro_html",
+    "Rust/rust-in/ch5/macro_html.macro_html.2c5ffa1d7a87ded6-cgu.0.rcgu.o",
+    "Rust/rust-in/ch5/macro_html.42jjsbzsb42c1hi74fs2nkr7i.rcgu.o",
+    "Rust/rust-in/ch5/macro_html.rs",
+    "Rust/rust-in/ch5/macro_echo_num",
+    "Rust/rust-in/ch5/macro_echo_num.macro_echo_num.3907034c7caee85a-cgu.0.rcgu.o",
+    "Rust/rust-in/ch5/macro_echo_num.79ka6cxqn2ixowlxrjuxpep7i.rcgu.o",
+    "Rust/rust-in/ch5/macro_echo_num.rs",
+    "Rust/md 정리/간이 채팅 프로그램.md",
+    "Rust/md 정리/매크로 만들기.md",
     "Rust/rust-in/ch5/chat_client",
     "Rust/rust-in/ch5/chat_client.chat_client.45a2e3a616e2a95e-cgu.0.rcgu.o",
     "Rust/rust-in/ch5/chat_client.chat_client.45a2e3a616e2a95e-cgu.1.rcgu.o",
-    "Rust/rust-in/ch5/chat_client.chat_client.45a2e3a616e2a95e-cgu.2.rcgu.o",
-    "Rust/rust-in/ch5/chat_client.cks0cg720e4fmy3zzdv4q13t3.rcgu.o",
-    "Rust/rust-in/ch5/chat_server.chat_server.5274209a7c1ebb1b-cgu.3.rcgu.o",
-    "Rust/rust-in/ch5/chat_server.chat_server.5274209a7c1ebb1b-cgu.4.rcgu.o",
-    "Rust/rust-in/ch5/chat_server.chat_server.5274209a7c1ebb1b-cgu.5.rcgu.o",
-    "Rust/rust-in/ch5/chat_server.chat_server.5274209a7c1ebb1b-cgu.2.rcgu.o",
-    "Rust/rust-in/ch5/chat_server.chat_server.5274209a7c1ebb1b-cgu.1.rcgu.o",
-    "Rust/rust-in/ch5/chat_server.chat_server.5274209a7c1ebb1b-cgu.6.rcgu.o",
     "HelloPY/운영아이디어 노트.md",
     "HelloPY/10-13.md",
-    "Rust/md 정리/간이 채팅 프로그램.md",
     "상황정리/해야하는 것.md",
     "Rust/md 정리/네트워크와 병렬 처리.md",
     "코딩테스트/정렬.md",
@@ -198,7 +217,6 @@
     "Rust/md 정리/러스트 라이프타임.md",
     "Rust/md 정리/테스트 프레임워크.md",
     "Rust/md 정리/전역 변수와 unsafe.md",
-    "Rust/md 정리/러스트 특징.md",
     "데이터베이스/Pasted image 20240830155548.png"
   ]
 }
