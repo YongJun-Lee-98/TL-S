@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Rust/md 정리/메모리 참조 카운터.md",
+                "file": "Rust/md 정리/비동기 통신과 스크래핑.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "메모리 참조 카운터"
+              "title": "비동기 통신과 스크래핑"
             }
           }
         ]
@@ -52,7 +52,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "refcell",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Rust/md 정리/메모리 참조 카운터.md",
+                "file": "Rust/md 정리/비동기 통신과 스크래핑.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "메모리 참조 카운터의 백링크"
+              "title": "비동기 통신과 스크래핑의 백링크"
             }
           },
           {
@@ -112,12 +112,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Rust/md 정리/메모리 참조 카운터.md",
+                "file": "Rust/md 정리/비동기 통신과 스크래핑.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "메모리 참조 카운터의 나가는 링크"
+              "title": "비동기 통신과 스크래핑의 나가는 링크"
             }
           },
           {
@@ -139,10 +139,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Rust/md 정리/메모리 참조 카운터.md"
+                "file": "Rust/md 정리/비동기 통신과 스크래핑.md"
               },
               "icon": "lucide-list",
-              "title": "메모리 참조 카운터 개요"
+              "title": "비동기 통신과 스크래핑 개요"
             }
           },
           {
@@ -180,19 +180,25 @@
   },
   "active": "82aa054e04ed863c",
   "lastOpenFiles": [
-    "Rust/rust-in/test.rs",
-    "Rust/md 정리/단방향 리스트로 메모리 관리 이해하기.md",
+    "Rust/md 정리/파서 생성기로 미니 언어 만들기.md",
+    "Rust/md 정리/비동기 통신과 스크래핑.md",
     "Rust/md 정리/메모리 참조 카운터.md",
-    "Rust/rust-in/ch6/slist/target/debug/slist.d",
-    "Rust/rust-in/ch6/slist/target/debug/slist",
-    "Rust/rust-in/ch6/slist/target/debug/deps/slist-f3bfd4c90874d81e",
-    "Rust/rust-in/ch6/slist/target/debug/incremental/slist-1irhebqzyk57e/s-h0ypbwhk4x-1iclsvj-9c4gpgo9ca26wm9fxnm1754dg/work-products.bin",
-    "Rust/rust-in/ch6/slist/target/debug/incremental/slist-1irhebqzyk57e/s-h0ypbwhk4x-1iclsvj-9c4gpgo9ca26wm9fxnm1754dg/query-cache.bin",
-    "Rust/rust-in/ch6/slist/target/debug/incremental/slist-1irhebqzyk57e/s-h0ypbwhk4x-1iclsvj-9c4gpgo9ca26wm9fxnm1754dg/eulh55rdgm11in26cfkcv2dgs.o",
-    "Rust/rust-in/ch6/slist/target/debug/incremental/slist-1irhebqzyk57e/s-h0ypbwhk4x-1iclsvj-9c4gpgo9ca26wm9fxnm1754dg/dgr2cf66icl9n4lz8q3dzvtpz.o",
-    "Rust/rust-in/ch6/slist/target/debug/incremental/slist-1irhebqzyk57e/s-h0ypbwhk4x-1iclsvj-9c4gpgo9ca26wm9fxnm1754dg/46txqnt4ds0r5n2rxsvk78v6s.o",
-    "Rust/rust-in/ch6/slist/target/debug/incremental/slist-1irhebqzyk57e/s-h0ypbwhk4x-1iclsvj-9c4gpgo9ca26wm9fxnm1754dg/dep-graph.bin",
-    "Rust/rust-in/ch6/slist/target/debug/incremental/slist-1irhebqzyk57e/s-h0ypbwhk4x-1iclsvj-9c4gpgo9ca26wm9fxnm1754dg/cfoiw2s8ydqx5ybpw95oiswmj.o",
+    "Rust/rust-in/ch6/rc_mod_err",
+    "Rust/rust-in/ch6/rc_mod_err.rc_mod_err.5e648854e34d6e51-cgu.0.rcgu.o",
+    "Rust/rust-in/ch6/rc_mod_err.aah0ini8jof0pwxrshwh5899p.rcgu.o",
+    "Rust/rust-in/ch6/rc_mod_err.rs",
+    "Rust/md 정리/이미지 처리 도구 만들기.md",
+    "Rust/md 정리/전역 변수와 unsafe.md",
+    "Rust/md 정리/네트워크와 병렬 처리.md",
+    "Rust/md 정리/단방향 리스트로 메모리 관리 이해하기.md",
+    "Rust/md 정리/공통 동작을 정의하는 트레잇.md",
+    "코딩테스트/Python/md파일/6. 정렬 알고리즘.md",
+    "코딩테스트/Python/code_python/stack_python.py",
+    "코딩테스트/Python/code_python/queue.py",
+    "코딩테스트/Python/code_python/move_map.py",
+    "코딩테스트/Python/code_python/move_map_1.py",
+    "코딩테스트/Python/code_python/king_knight.py",
+    "코딩테스트/Python/code_python/greedy_number_card.py",
     "Rust/md 정리/러스트의 모듈, 크레이트 패키지.md",
     "Rust/md 정리/간이 채팅 프로그램.md",
     "Rust/md 정리/구조체와 메서드.md",
@@ -201,22 +207,16 @@
     "HelloPY/운영아이디어 노트.md",
     "HelloPY/10-13.md",
     "상황정리/해야하는 것.md",
-    "Rust/md 정리/네트워크와 병렬 처리.md",
     "코딩테스트/정렬.md",
     "코딩테스트/3. DFS_BFS.md",
     "코딩테스트/1. 그리디.md",
-    "Rust/md 정리/이미지 처리 도구 만들기.md",
     "Rust/rust-in/ch4/image_checkerboard/checkerboard.png",
     "Rust/md 정리/무제 파일 1.md",
     "Rust/md 정리/직접 만든 크레이트 공개하기.md",
     "Rust/md 정리/열거형과 패턴 매칭.md",
-    "Rust/md 정리/공통 동작을 정의하는 트레잇.md",
     "Rust/md 정리/제네릭.md",
     "테스트/Error test.md",
     "Rust/md 정리/반복자.md",
-    "코딩테스트/Python/무제 파일.md",
-    "README.md",
-    "Rust/md 정리/러스트 라이프타임.md",
     "데이터베이스/Pasted image 20240830155548.png"
   ]
 }
