@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Rust/md 정리/비동기 통신과 스크래핑.md",
-                "mode": "preview",
+                "file": "homework/Django/study.md",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "비동기 통신과 스크래핑"
+              "title": "study"
             }
           }
         ]
@@ -180,6 +180,16 @@
   },
   "active": "82aa054e04ed863c",
   "lastOpenFiles": [
+    "코딩테스트/Python/md파일/취업 관련 복잡도 설명과 코딩 테스트.md",
+    "homework/Django/study.md",
+    "homework/Django",
+    "코딩테스트/Python/md파일/실습 환경 구축하기.md",
+    "코딩테스트/Python/md파일/무제 파일.md",
+    "코딩테스트/Python/md파일/6. 정렬 알고리즘.md",
+    "코딩테스트/Python/md파일/3. DFS_BFS.md",
+    "코딩테스트/Python/md파일/1. 그리디.md",
+    "코딩테스트/주요 목차.md",
+    "Rust/md 정리/비동기 통신과 스크래핑.md",
     "Rust/rust-in/ch6/scraping_shodou/target/debug/deps/scraping_shodou-a9eb13405819029c",
     "Rust/rust-in/ch6/scraping_shodou/target/debug/incremental/scraping_shodou-26ijwo86ssqzp/s-h10wnhdv8r-0y8qcdp-d1988djokztp83if95dnvksun/query-cache.bin",
     "Rust/rust-in/ch6/scraping_shodou/target/debug/incremental/scraping_shodou-26ijwo86ssqzp/s-h10wnhdv8r-0y8qcdp-d1988djokztp83if95dnvksun/work-products.bin",
@@ -189,8 +199,6 @@
     "Rust/rust-in/ch6/scraping_shodou/target/debug/incremental/scraping_shodou-26ijwo86ssqzp/s-h10wnhdv8r-0y8qcdp-d1988djokztp83if95dnvksun/egokdgnfp3n66tra4vf50ub6r.o",
     "Rust/rust-in/ch6/scraping_shodou/target/debug/incremental/scraping_shodou-26ijwo86ssqzp/s-h10wnhdv8r-0y8qcdp-d1988djokztp83if95dnvksun/d2rppdofucybcejpkv6vulimv.o",
     "Rust/rust-in/ch6/scraping_shodou/target/debug/incremental/scraping_shodou-26ijwo86ssqzp/s-h10wnhdv8r-0y8qcdp-d1988djokztp83if95dnvksun/cx6iw921f53ar486pc0ew5xq8.o",
-    "Rust/rust-in/ch6/scraping_shodou/target/debug/incremental/scraping_shodou-26ijwo86ssqzp/s-h10wnhdv8r-0y8qcdp-d1988djokztp83if95dnvksun/dep-graph.bin",
-    "Rust/rust-in/ch6/scraping_shodou/target/debug/incremental/scraping_shodou-26ijwo86ssqzp/s-h10wnhdv8r-0y8qcdp-d1988djokztp83if95dnvksun/dcf3t9ulo0vq54bri8vkc7le2.o",
     "Rust/rust-in/ch6/scraping_shodou/shodou_test_4.png",
     "Rust/rust-in/ch6/scraping_shodou/shodou_test_3.png",
     "Rust/rust-in/ch6/scraping_shodou/shodou_test_2.png",
@@ -198,14 +206,12 @@
     "Rust/rust-in/ch6/scraping_shodou/shodou_test_0.png",
     "Rust/md 정리/파이썬과의 비교.md",
     "Rust/md 정리/파서 생성기로 미니 언어 만들기.md",
-    "Rust/md 정리/비동기 통신과 스크래핑.md",
     "Rust/md 정리/메모리 참조 카운터.md",
     "Rust/md 정리/이미지 처리 도구 만들기.md",
     "Rust/md 정리/전역 변수와 unsafe.md",
     "Rust/md 정리/네트워크와 병렬 처리.md",
     "Rust/md 정리/단방향 리스트로 메모리 관리 이해하기.md",
     "Rust/md 정리/공통 동작을 정의하는 트레잇.md",
-    "코딩테스트/Python/md파일/6. 정렬 알고리즘.md",
     "Rust/md 정리/러스트의 모듈, 크레이트 패키지.md",
     "Rust/md 정리/간이 채팅 프로그램.md",
     "Rust/md 정리/구조체와 메서드.md",
@@ -215,13 +221,7 @@
     "HelloPY/10-13.md",
     "상황정리/해야하는 것.md",
     "코딩테스트/정렬.md",
-    "코딩테스트/3. DFS_BFS.md",
-    "코딩테스트/1. 그리디.md",
     "Rust/rust-in/ch4/image_checkerboard/checkerboard.png",
-    "Rust/md 정리/무제 파일 1.md",
-    "Rust/md 정리/직접 만든 크레이트 공개하기.md",
-    "Rust/md 정리/열거형과 패턴 매칭.md",
-    "Rust/md 정리/제네릭.md",
     "데이터베이스/Pasted image 20240830155548.png"
   ]
 }
