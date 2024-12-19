@@ -404,3 +404,299 @@ Django에서 정적파일은 두 가지로 나뉜다.
 소스코드에 포함되는 정적파일은 settings.py STATICFILES_DIR에 저장될 경로를 지정하고 
 템플릿에서 {\% static \%} 태그를 사용해서 불러오는 방식을 사용한다. 
 소스코드에 포함되는 파일의 경로만 지정하면 되므로 비교적 설정이 간단하다. 
+
+# 유저가 업로드하는 정적 파일
+## 정적 파일 분류
+Django에서는 정적 파일은 두 가지로 나뉜다.
+- 소스코드에 포함되는 정적 파일
+- 유저가 업로드하는 정적 파일
+
+정적 파일은 이미지/동영상/CSS 파일과 같은 변하지 않는 데이터를 뜻함  
+이전에 정적 파일을 넣어놓기로 했던 디렉터리 static는 소스코드에 포함되는 정적파일을 두는 곳을 말하며 여기에 있는 파일들은 만드는 프로젝트의 일부분으로 취급된다.  
+
+반면에 유저가 업로드하는 정적파일은 프로젝트에 포함되지 않는다. 이 분류의 정적파일은 블로그라는 전체 프로젝트와는 별개로, 블로그를 사용하는 사용자들이 업로드하는 글에 포함된 이미지와 같은 데이터를 의미함
+
+소스코드에 포함되는 정적파일은 settings.py의 STATICFILES_DIRS에 저장될 경로를 지정하고, 템플릿에서 {% static %} 태그를 사용해서 불러오는 방식을 사용한다.  
+소스코드에 포함되는 파일의 경로만 지정하면 되므로 비교적 설정이 간단하다. 한편 유저가 업로드하는 정적파일은 조금 더 설정이 복잡하다.
+
+Django에서는 이 둘을 조금 다른 이름으로 부른다.  
+소스코드에 포함되는 정적파일은 의미 그대로 Staticfile, 유저가 업로드하는 정적파일은 User-uploaded static file이라 부른다.  
+
+## 유저가 업로드하는 정적파일 설정
+settings.py에서 소스코드에 포함되는 정적파일의 설정은 대부분 STATIC_으로 시작하고, 유저가 업로드하는 정적파일과 관련된 설정은 대부분 MEDIA_로 시작한다.
+
+- MEDIA_URL
+  유저가 업로드한 파일에 접근할 수 있도록 브라우저에 제공하는 경로 접두어(Prefix)를 나타낸다. 기본 설정이 되어 있어 이전에는 생략했지만, 소스코드에 포함되는 정적파일은 STATIC_URL이라는 설정값을 사용하며 기본값은 \/static\/ 이다. 한편, 유저가 업로드한 파일의 경로 접두어는 \/media\/를 사용한다.  
+- MEDIA_ROOT
+  실제로 유저가 업로드한 파일이 저장될 경로를 나타낸다.
+  유저가 업로드한 정적 파일은 프로젝트 디렉터리 하위의 media 디렉터리를 사용한다.  
+  settings.py의 BASE_DIR은 프로젝트 디렉터리를 나타내며,
+  한 단계 하위 디렉터리는 BASE_DIR / "디렉터리 명" 으로 지정한다.
+```python
+# MEDIA_ 관련 설정 추가 
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR / "media"
+```
+## 정적파일을 저장하는 필드 추가
+각각의 글에 썸네일 이미지를 저장할 필드를 추가한다.  
+이미지를 저장할 때는 Django에 내장되어 있는 ImageField를 사용한다.  
+
+```python
+class Post(models.Model):
+	title = models.CharField("포스트 제목", max_length=100)
+	content = models.TextField("포스트 내용")
+	thumbnail = models.ImageField("썸네일 이미지", upload_to="post", blank=True)
+```
+
+## MEDIA_URL과 업로드 파일 연결
+```python
+from django.conf import settings
+from django.conf.urls.static import static
+from django.contrib import admin
+from django.urls import path
+
+from blog.views import post_list
+from config.views import index
+
+urlpatterns = [
+	path("admin/", admin.site.urls),
+	path("", index),
+	path("posts/", post_list),
+]
+
+urlpatterns += static(
+	# URL의 접두어가 MEDIA_URL일 때는 정적파일을 돌려준다.
+	prefix=settings.MEDIA_URL,
+	# 돌려줄 디렉터리는 MEDIA_ROOT를 기준으로 한다.
+	document_root= settings.MEDIA_ROOT,
+)
+```
+import 시 모듈의 이름에 주의하기
+settings는 django.conf에서 가져오며, static은 django.conf.urls.static에서 가져온다.
+
+static 함수에 전달하는 prefix와 document_root 인수는 각각 어떤 URL 접두어가 올 경우와 어디에서 파일을 찾아 돌려줄 것인가를 뜻한다.
+MEDIA_URL로 시작하는 URL 요청이 오면, MEDIA_ROOT에서 파일을 찾아 돌려주기 위해 위와 같이 설정한다.  
+개발서버 재시작후 Django admin에서 이미지를 클릭해보기  
+
+> Note MEDIA_ROOT와 MEDIA_URL
+> 위 코드를 사용해 MEDIA_URL 경로와 MEDIA_ROOT의 파일을 연결시키면, 외부에서 정적파일의 URL을 요청했을 때 해당 요청을 Django가 처리하여 파일을 돌려주게 된다. 이 설정이 미리되어있지 않은 이유는 효율성 때문이다. 외부에서의 요청에 대해 정적파일을 돌려주는 작업은 Nginx나 Apache와 같은 웹 서버가 담당하는 것이 더 효율적임 정적파일 처리를 웹 서버 대신 Django가 담당하는 것은 개발 단계의 편의성을 위해서만 사용해야 한다.
+
+## 템플릿에 업로드된 파일 보여주기
+admin.py의 내용중
+```python
+@admin.register(Post)
+class PostAdmin(admin.ModelAdmin):
+    list_display = ["title", "thumbnail"]
+```
+
+
+### ImageField의 속성들
+Post의 thumbnail 속성은 ImageField이다.
+Django는 ImageField에 업로드한 이미지를 사용할 수 있는 기능을 제공한다.
+이를 먼저 알아보기
+> python manage.py shell
+> 
+> from blog.models import Post
+> post = Post.objects.first()
+> 
+> # thumbnial 속성에 접근하면 ImageField의 파일 정보를 확인할 수 있다.
+> post.thumbnail
+> 
+> # ImageField의 "name"속성은 MEDIA_ROOT 디렉터리를 기준으로 저장된 이미지의 경로를 나타낸다.
+> post.thumbnail.name
+> 
+> # ImageFiled의 "path" 속성은 시스템 전체를 기준으로 이미지의 전체 경로를 나타낸다.
+> post.thumbnail.path
+> 
+> # ImageField의 "size" 속성은 저장된 파일의 bytes 수를 나타낸다.
+> post.thumbnail.size
+> 
+> # ImageField의 "url" 속성은 MEDIA_URL을 기준으로 이미지의 접근 URL을 생성한다.
+> post.thumbnail.url
+
+# 글 상세 페이지
+## 상세 페이지 기본 구조
+글의 전체 목록에는 모든 내용을 표시할 수 없다. 각각의 글이 가진 모든 내용을 표시할 상세 화면을 구성해보자.
+새 기능을 추가할 때는 늘 빈 View, URL, Template을 만들고 연결을 확인한다.  
+- View: blog/views.py의 post_detail
+- URL: ID가 1번인 글을 \/post/1/, 2번인 글은 \/post/2\/ 를 사용
+- Template: templates/post_detail.html을 사용
+
+View와 Template은 지금까지 만들어왔던 예제와 크게 다르지 않다. 하지만 전체 글 목록을 볼 수 있는 \/post/ URL(View는 post_list)과는 달리, 글의 상세 페이지는 자신(Post)의 ID 값에 따라 서로 다른 동적인 URL을 가져야한다.  
+
+> Model의 id필드
+> 
+> Model 클래스로 생성된 테이블에는 id 필드가 자동으로 생성되며, 해당 테이블에 새로운 데이터(row)가 추가될 때마다 기존에 존재하던 가장 큰 id값보다 1증가된 값이 할당된다. Django의 Model에서 id필드는 이 기능을 지원하는 AutoField로 되어 있음
+
+```python
+urlpatterns = [
+	...
+	path("posts/<int:post_id>/", post_detail),
+]
+```
+url.py의 패턴에 주소를 등록하고
+이 안에서 함수의 내부에 매개변수를 넣을 수 있음  
+
+## ID에 해당하는 글을 보여주기
+urls.py <\int:post_id> 영역을 사용해 URL을 통해 동적으로 값을 전달할 수 있게 되어있다.  
+이제 URL로 전달받은 ID에 해당하는 Post를 실제로 보여주도록 하자.  
+
+### 전달받은 인수를 Template에 보여주기
+지금은 어떤 숫자를 입력하든, 내용의 변화없이 Post Detail이라는 제목이 보이는 페이지가 나타난다.  
+URL을 통해 인수를 받았다는 사실을 사용자가 보는 화면에 출력해보자.  
+View 함수에서 Template에 dict를 사용해서 값을 전달한다.  
+
+스타일은 잘 적요되지만 본문 내용의 줄바꿈이 적용되지 않음
+이 글은 admin에서 보낸 글에서는 줄바꿈이 적용되었음을 보여주지만
+HTML에서는 줄바꿈 내용이 적용되지 않는다. 
+Django의 기능 사용하여 줄바꿈을 적용은 |linebreaksbr을 추가하기
+
+> |linebreaksbr 필터
+> linebreaksbr은 Django Template에서 필터의 한 종류이다. 필터는 좌측의 변수 문자열의 줄바꿈을 HTML의 \<br> 태그로 치환해 준다.
+> \<br>은 HTML의 줄바꿈 태그이다.  
+
+
+## 댓글 기능
+### 댓글 목록 표시
+제목 썸네일 본문을 모두 출력했음
+이제 하단에 댓글 목록을 보여주어야함
+댓글 목록은 이미 구현해보았으니 구현된 코드만 살펴보기
+
+## 사용자의 입력을 받는 Template
+### HTML 형태 구현
+HTML 에서 사용자의 입력을 받는 요소는 다음과 같음
+- 입력에 대한 제목: \<label>
+- 한 줄 짜리 텍스트 입력: \<input type="text">
+- 여러 줄의 텍스트 입력: \<textarea>
+- 버튼: \<button>
+
+> post_add.html
+```html
+<body>
+	<div>
+		<h1>Post Add</h1>
+	<form method="GET">
+		<div>
+			<label>제목</label>
+			<input type="text">
+		</div>
+		<div>
+			<label>내용</label>
+			<textarea></textarea>
+		<div>
+		<button>작성</button>
+		</form>
+	</div>
+<body>
+		
+```
+
+```html
+...
+
+<body>
+	<div>
+		<h1>Post Add</h1>
+	<form method="GET">
+		<div>
+			<label>제목</label>
+			<input name="title" type="text">
+		</div>
+		<div>
+			<label>내용</label>
+			<textarea name="content"></textarea>
+		<div>
+		<button type="submit">작성</button>
+		</form>
+	</div>
+<body>
+
+...
+```
+메서드가 POST가 아닐때
+HTTP의 요청 메서드는 GET, POST뿐 아니라 HEAD, PUT, PATCH, OPTIONS, DELETE 등 여러 종류가 있지만 HTML의 gorm태그에서는 GET과 POST 방식만 사용이 가능하다. 따라서 HTML form으로 전달받은 request의 method가 POST일 때와 POST가 아닐 때로 구분하면, POST가 아닐때는 GET 방식임을 나타낸다.  
+
+### POST데이터를 사용한 DB row 생성
+#### objects.create 메서드
+요청이 POST 메서드일 때 전달된 데이터를 가져오는데 성공했으니
+가져온 데이터를 사용해 DB에 새 row를 생성해보자
+ORM을 사용해서 DB에 데이터를 생성할 때 create메서드를 사용한다.
+create 메서드의 리턴값은 생성된 객체이며, 이를 변수에서 바로 할당해 사용이 가능함
+```python
+created_instance = ModelClass.objects.create(필드명=필드값)
+```
+
+
+
+## 댓글 작성
+### Comment 객체
+Comment객체의 구성
+```python
+post = models.ForeignKey(Post, on_delete=models.CASCADE)
+```
+Comment를 생성하려면 연결될 Post를 지정해주어야함  
+인터프리터에서 아래와 같이 Post 변수에 할당 후 진행해보기  
+
+```python
+if request.method == "POST":
+	# textarea의 "name" 속성값 ("comment")을 가져온다.
+	comment_content = request.POST["comment"]
+	
+```
+
+## 글 작성시 이미지 업로드
+파일을 전송해야할 경우 form에는 enctype="multipart/form-data" 속성을 추가해야한다.  
+enctype 속성은 데이터를 서버로 전송할 때 어떤 인코딩 유형을 사용할 것인지를 나타낸다.  
+
+# CustomUser
+users 앱 생성 및 등록
+python manage.py startup users
+/models.py
+```python
+from django.contrib.auth.models import AbstractUser
+from django.db import models
+
+class User(AbstractUser):
+     pass
+```
+AbstractUser는 Django가 CustomUser 모델을 만들기 위해 제공하는 기본 유저 형태를 가진 모델 클래스이다.  
+이 클래스는 Django의 기본 User 모델이 가진 필드를 똑같이 가지고 있으며, AbstractUser를 상속받으면 자동적으로 다음 필드들이 모델에 추가된다.  
+- username(ID)
+- passwoard
+- first_name(이름)
+- last_name(성)
+- email
+- is_staff(관리자 여부)
+- is_active(활성화 여부)
+- date_joined(가입 일시)
+- last_login(마지막 로그인 일시)
+
+관리자 페이지나 로그인 페이지에서 사용하는 아이디/비밀번호 중, 아이디에 해당하는 필드는 username 필드이다. (id 필드는 모델 클래스에서 자동 생성되며, 테이블의 기본키를 나타내는 데 쓰인다.)
+실제로 사용하지 않는 정보들도 있을 수 있지만 Django의 동작은 User 모델이 최소한 이 필드들을 가지고 있을 것으로 예측하고 만들어져 있는 경우가 많다.  
+
+> CustomerUser를 위한 모델
+> Django에서 CustomUser를 지원하는 모델로 AbstractUser와 이보다 적은 정보를 가지고 있는 AbstractBaseUser, 두 가지 정보를 제공한다.
+> password
+> last_login
+> AbstractBaseUser 모델을 사용해 CustomUser를 구현하면, 이외에 사용자를 나타내기 위한 필드들은 개발자가 별도로 구성해야 한다. AbstractBaseUser를 사용해 사용자 모델의 기본 필드들을 커스터마이징하는 것은 어느정도 Django의 사용에 익숙해진 후에 하길 바람
+
+
+CustomUser 모델에 추가한 필드를 관리자 페이지에 표시하도록 함  
+fields키의 캆 튜플이 하나의 요소를 가지는 경우에는 마지막에 반드시 쉼표가 붙어야한다.  
+```python
+# 단일 요소를 가지는 튜플 예시
+{
+	"fields": ("profile_image",)
+}
+```
+
+## 로그인/피드 페이지 기본 구조
+인스타그램에 접속했을 때, 로그인 중이라면 바로 피드 페이지가 나타나지만 로그인되지 않았거나 처음 접속한 경우에는 로그인 페이지로 이동한다.  
+
+> 두 조건에 맞도록 View에서 동작을 제어한다.
+
+1. 이미 사용자가 브라우저에서 로그인을 했다면
+   -> 피드(새 글 목록) 페이지를 보여줌
+2. 사용자가 로그인을 한 적이 없다면 (또는 로그아웃을 했다면)
+   -> 로그인 페이지를 보여줌
+
